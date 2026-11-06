@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDLC Chibis for Notion</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            height: 100vh;
+        }
+
+        .chibi-container {
+            display: flex;
+            position: absolute;
+            left: 20px;
+            bottom: 10px;
+            gap: 10px;
+        }
+
+        .monika {
+            background: url("https://tumblr.com") no-repeat;
+            background-size: 100%!important;
+            height: 119px;
+            width: 84px;
+        }
+
+        .monika:hover {
+            animation: monika 1600ms infinite linear;
+        }
+
+        @keyframes monika {
+            from {
+                transform: rotate(0deg);
+                content: url("https://tumblr.com");
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .natsuki {
+            background: url("https://tumblr.com") no-repeat;
+            background-size: 100%!important;
+            height: 110px;
+            width: 96px;
+        }
+
+        .natsuki:hover {
+            background: url("https://tumblr.com");
+            animation: natsuki 0.2s infinite linear;
+        }
+
+        @keyframes natsuki {
+            0%, 100% {
+                transform: translate(0);
+                content: url("https://tumblr.com");
+            }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+        }
+
+        .yuri {
+            background: url("https://tumblr.com") no-repeat;
+            background-size: 100%!important;
+            height: 115px;
+            width: 79px;
+        }
+
+        .yuri:hover {
+            background: url("https://tumblr.com");
+            animation: yuri 1.5s infinite linear;
+        }
+
+        @keyframes yuri {
+            0%, 100% {
+                transform: translateX(0);
+                content: url("https://tumblr.com");
+            }
+            10%, 30%, 50%, 70% { transform: translateX(-5px); }
+            20%, 40%, 60% { transform: translateX(5px); }
+            80% { transform: translateX(8px); }
+            90% { transform: translateX(-8px); }
+        }
+
+        .sayori {
+            background: url("https://tumblr.com") no-repeat;
+            background-size: 100%!important;
+            height: 115px;
+            width: 79px;
+        }
+
+        .sayori:hover {
+            background: url("https://tumblr.com");
+            animation: sayori 0.9s infinite linear;
+        }
+
+        @keyframes sayori {
+            0%, 100% {
+                transform: translateX(0%);
+                transform-origin: 50% 50%;
+                content: url("https://tumblr.com");
+            }
+            15% { transform: translateX(-2px) rotate(-2deg); }
+            30% { transform: translateX(5px) rotate(8deg); }
+            45% { transform: translateX(-6px) rotate(-3.6deg); }
+            60% { transform: translateX(5px) rotate(2.4deg); }
+            75% {
+                transform: translateX(-6px) rotate(-1.2deg);
+                content: url("https://tumblr.com");
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chibi-container">
+        <div class="monika"></div>
+        <div class="natsuki"></div>
+        <div class="yuri"></div>
+        <div class="sayori"></div>
+    </div>
+
+</body>
+</html>
